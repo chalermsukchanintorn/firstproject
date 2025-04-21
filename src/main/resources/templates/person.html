@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+    <img th:src="@{/images/bread03.png}" alt="รูปโปรไฟล์" width="200" /><br><br>
+    <img th:src="'https://cdn.pixabay.com/photo/2023/09/04/23/58/woman-8233937_640.jpg'" alt="รูปโปรไฟล์" width="200" />
+    <img th:src="@{https://cdn.pixabay.com/photo/2023/09/04/23/58/woman-8233937_640.jpg}" alt="รูปโปรไฟล์" width="200" />
     <h1>Person Infomation</h1>
     <hr>
     <form th:action="@{/showperson}" th:object="${person}" method="post">
@@ -22,7 +25,6 @@
         </label><br><br>
 
         <button type="submit">ส่งข้อมูล</button>
-
     </form>
 </body>
 </html>
