@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Show Person Infomation</h1>
+    <hr>
+    <p><strong>ชื่อ-นามสกุล:</strong> <span th:text="${person.firstName}"></span></p>
+    <p><strong>อายุ:</strong> <span th:text="${age}"></span> ปี</p>
+
+    <a th:href="@{/person}">ย้อนกลับ</a>
+</body>
+</html>

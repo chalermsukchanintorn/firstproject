@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class HelloController {
     //Request
+    @GetMapping("hello")
+    public String showHello(){
+        return "Hello...";
+    }
+
     @GetMapping("/hi")
     public String showHi(@RequestParam(required = false) String firstname,@RequestParam String lastname) {
         System.out.println(firstname);

@@ -3,8 +3,10 @@ package com.sau.dti.firstproject.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("api/wow")
 public class FirstPageController {
     @GetMapping("firstpage")
     //หรือ @GetMapping("/firstpage")
